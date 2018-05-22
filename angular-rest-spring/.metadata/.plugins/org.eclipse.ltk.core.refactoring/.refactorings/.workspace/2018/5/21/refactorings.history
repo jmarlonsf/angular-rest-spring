@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;algamoney-api-1&apos; to &apos;algamoneyapi&apos;" description="Rename resource &apos;algamoney-api-1&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/algamoney-api-1" name="algamoneyapi" stamp="1527017587327" updateReferences="true"/>
+</session>
