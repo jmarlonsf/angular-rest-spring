@@ -1,0 +1,7 @@
+package com.example.algamoney.api.repository;
+
+import com.example.algamoney.api.model.Pessoa;
+
+public class PessoaRepository extends JpaRepository<Pessoa>{
+
+}

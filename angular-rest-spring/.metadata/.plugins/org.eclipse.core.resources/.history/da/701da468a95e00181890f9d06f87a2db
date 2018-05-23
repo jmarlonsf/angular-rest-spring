@@ -1,0 +1,9 @@
+package com.example.algamoney.api.evento.listener;
+
+import org.springframework.context.ApplicationListener;
+
+import com.example.algamoney.api.evento.RecursoCriadoEvent;
+
+public class RecursoCriadoListener implements ApplicationListener<RecursoCriadoListener>{
+
+}

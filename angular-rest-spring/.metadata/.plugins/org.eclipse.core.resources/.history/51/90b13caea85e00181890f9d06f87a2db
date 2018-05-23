@@ -1,0 +1,5 @@
+package com.example.algamoney.api.evento;
+
+public class RecursoCriadoEvent {
+
+}
