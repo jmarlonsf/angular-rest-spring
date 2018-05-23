@@ -50,6 +50,7 @@
 			<artifactId>mysql-connector-java</artifactId>
 			<scope>runtime</scope>
 		</dependency>
+
 		<!-- Migracoes Flywaydb -->
 		<dependency>
 	   		<groupId>org.flywaydb</groupId>
