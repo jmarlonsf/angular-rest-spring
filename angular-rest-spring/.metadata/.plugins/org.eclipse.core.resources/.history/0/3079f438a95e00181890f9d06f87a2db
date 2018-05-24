@@ -1,7 +1,0 @@
-package com.example.algamoney.api.evento.listener;
-
-import org.springframework.context.ApplicationListener;
-
-public class RecursoCriadoListener implements ApplicationListener<ApplicationEvent>{
-
-}
