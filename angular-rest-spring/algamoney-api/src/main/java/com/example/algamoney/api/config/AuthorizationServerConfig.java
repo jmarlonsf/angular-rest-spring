@@ -14,26 +14,25 @@ import org.springframework.security.oauth2.provider.token.store.JwtTokenStore;
 
 @Configuration
 @EnableAuthorizationServer
-public class AuthorizarionServerConfig extends AuthorizationServerConfigurerAdapter {
+public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdapter {
 
 	@Autowired
 	private AuthenticationManager authenticationManager;
 	
 	@Override
 	public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
-		//cliente - quem o usuário está usando
 		clients.inMemory()
 			.withClient("angular")
 			.secret("@ngul@r0")
 			.scopes("read", "write")
 			.authorizedGrantTypes("password", "refresh_token")
-			.accessTokenValiditySeconds(1800)
+			.accessTokenValiditySeconds(20)
 			.refreshTokenValiditySeconds(3600 * 24);
 	}
 	
 	@Override
 	public void configure(AuthorizationServerEndpointsConfigurer endpoints) throws Exception {
-		endpoints	
+		endpoints
 			.tokenStore(tokenStore())
 			.accessTokenConverter(accessTokenConverter())
 			.reuseRefreshTokens(false)
@@ -51,4 +50,5 @@ public class AuthorizarionServerConfig extends AuthorizationServerConfigurerAdap
 	public TokenStore tokenStore() {
 		return new JwtTokenStore(accessTokenConverter());
 	}
+	
 }
