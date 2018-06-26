@@ -11,6 +11,7 @@ import { InputTextModule } from 'primeng/components/inputtext/inputtext';
 import { SelectButtonModule } from 'primeng/components/selectbutton/selectbutton';
 import { TooltipModule } from 'primeng/components/tooltip/tooltip';
 
+import { CurrencyMaskModule } from 'ng2-currency-mask';
 
 import { AppComponent } from './app.component';
 import { LancamentosPesquisaComponent } from './lancamentos-pesquisa/lancamentos-pesquisa.component';
@@ -32,6 +33,7 @@ import { LancamentoCadastroComponent } from './lancamento-cadastro/lancamento-ca
     BrowserAnimationsModule,
     ButtonModule,
     CalendarModule,
+    CurrencyMaskModule,
     DataTableModule,
     DropdownModule,
     InputTextareaModule,
