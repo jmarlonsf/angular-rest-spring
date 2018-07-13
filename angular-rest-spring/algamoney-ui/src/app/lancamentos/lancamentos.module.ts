@@ -13,6 +13,7 @@ import { DataTableModule } from 'primeng/components/datatable/datatable';
 import { CalendarModule } from 'primeng/components/calendar/calendar';
 import { ButtonModule } from 'primeng/components/button/button';
 
+import { SharedModule } from './../shared/shared.module';
 import { LancamentoCadastroComponent } from './lancamento-cadastro/lancamento-cadastro.component';
 import { LancamentosPesquisaComponent } from './lancamentos-pesquisa/lancamentos-pesquisa.component';
 import { LancamentosGridComponent } from './lancamentos-grid/lancamentos-grid.component';
@@ -32,7 +33,9 @@ import { LancamentosGridComponent } from './lancamentos-grid/lancamentos-grid.co
     SelectButtonModule,
     TooltipModule,
     // ng2
-    CurrencyMaskModule
+    CurrencyMaskModule,
+
+    SharedModule
   ],
   declarations: [
     LancamentoCadastroComponent,
